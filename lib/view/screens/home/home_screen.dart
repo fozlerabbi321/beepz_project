@@ -5,6 +5,8 @@ import 'package:mystarter/constants/colors_data.dart';
 import 'package:mystarter/constants/images.dart';
 import 'package:mystarter/constants/size_config.dart';
 
+import '../../../models/response/rp_server_model.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -67,7 +69,7 @@ class HomeScreen extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                   child: ListView.builder(
-                      itemCount: 10,
+                      itemCount: serverList.length,
                       padding: EdgeInsets.zero,
                       shrinkWrap: true,
                       physics: const NeverScrollableScrollPhysics(),
