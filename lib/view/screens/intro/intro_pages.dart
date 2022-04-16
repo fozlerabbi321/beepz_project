@@ -4,8 +4,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:mystarter/constants/colors_data.dart';
 import 'package:mystarter/constants/images.dart';
 import 'package:mystarter/constants/size_config.dart';
-
-import '../dashboard/dashboard_screen.dart';
+import 'package:mystarter/view/screens/home/home_screen.dart';
 import 'components/intro_content.dart';
 
 class IntroPages extends StatefulWidget {
@@ -54,7 +53,7 @@ class _IntroPagesState extends State<IntroPages> {
             onTap: () async {
               box.write('intro', true);
               Get.offAll(
-                () => const DashboardScreen(),
+                () => const HomeScreen(),
               );
             },
             child: Center(
@@ -157,7 +156,7 @@ class _IntroPagesState extends State<IntroPages> {
                           } else {
                             box.write('intro', true);
                             Get.offAll(
-                              () => const DashboardScreen(),
+                              () => const HomeScreen(),
                             );
                           }
                         },

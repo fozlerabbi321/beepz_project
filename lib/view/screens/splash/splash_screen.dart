@@ -6,8 +6,7 @@ import 'package:mystarter/constants/images.dart';
 import 'package:mystarter/constants/size_config.dart';
 import 'package:mystarter/main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import '../dashboard/dashboard_screen.dart';
+import '../home/home_screen.dart';
 import '../intro/intro_pages.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -49,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen>
 
   void navigation() async {
     if (box.read('intro') == true) {
-      Get.offAll(() => const DashboardScreen());
+      Get.offAll(() => const HomeScreen());
     } else {
       Get.offAll(() => const IntroPages());
     }
