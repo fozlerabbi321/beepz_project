@@ -23,12 +23,6 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       drawerEnableOpenDragGesture : false,
-      appBar: AppBar(
-        toolbarHeight: 0.0,
-        actions: [
-          Container(),
-        ],
-      ),
       body: SafeArea(
         child: Container(
           color: Get.isDarkMode
@@ -36,51 +30,47 @@ class HomeScreen extends StatelessWidget {
               : kPrimaryColor,
           child: Column(
             children: [
-              Align(
-                alignment: Alignment.topCenter,
-                child: Container(
-                  color: Get.isDarkMode
-                      ? Theme.of(context).cardColor
-                      : kPrimaryColor,
-                  //color: kPrimaryColor,
-                  height: 58,
-                  width: SizeConfig.screenWidth,
-                  child: Stack(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10, left: 10,),
+              Container(
+                color: Get.isDarkMode
+                    ? Theme.of(context).cardColor
+                    : kPrimaryColor,
+                //color: kPrimaryColor,
+                height: 58,
+                width: SizeConfig.screenWidth,
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    Builder(
+                      builder: (cnx) => // Ensure Scaffold is in context
+                      InkWell(
+                        onTap: () {
+                          log('message');
+                          Scaffold.of(cnx).openDrawer();
+
+                        },
                         child: Align(
                           alignment: Alignment.centerLeft,
-                          child: Builder(
-                            builder: (cnx) => // Ensure Scaffold is in context
-                            InkWell(
-                              onTap: () {
-                                Scaffold.of(cnx).openDrawer();
-                                log('message');
-                              },
-                              child: SvgPicture.asset(
-                                Images.menu,
-                                color: kWhiteColor,
-                                height: 25,
-                              ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10,),
+                            child: SvgPicture.asset(
+                              Images.menu,
+                              color: kWhiteColor,
+                              height: 25,
                             ),
                           ),
                         ),
                       ),
-
-                      Positioned(
-                          top: 10,
-                          left: 0,
-                          right: 0,
-                          child: SizedBox(
-                            height: 35,
-                            child: Image.asset(
-                              Images.homeLogo,
-                              color: Colors.white,
-                            ),
-                          )),
-                    ],
-                  ),
+                    ),
+                    Center(
+                      child: SizedBox(
+                        height: 35,
+                        child: Image.asset(
+                          Images.homeLogo,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Expanded(

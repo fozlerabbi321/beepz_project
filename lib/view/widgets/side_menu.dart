@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mystarter/constants/size_config.dart';
-
 import '../../constants/images.dart';
 import '../../constants/style_data.dart';
 import '../../controler/theme_controller.dart';

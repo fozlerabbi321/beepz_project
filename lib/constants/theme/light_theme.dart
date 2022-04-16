@@ -11,7 +11,7 @@ ThemeData light = ThemeData(
       fontSize: 18,
       fontWeight: FontWeight.w600,
     ),
-    color: kWhiteColor,
+    color: kPrimaryColor,
     elevation: 0.0,
     iconTheme: IconThemeData(
       color: kBlackColor2,
@@ -21,11 +21,11 @@ ThemeData light = ThemeData(
     ),
     centerTitle: false,
     systemOverlayStyle: SystemUiOverlayStyle(
-      statusBarColor: kWhiteColor,
+      statusBarColor: kPrimaryColor,
       statusBarIconBrightness: Brightness.dark,
       systemNavigationBarIconBrightness: Brightness.dark,
       statusBarBrightness: Brightness.light,
-      systemNavigationBarColor: kBlackColor2,
+      systemNavigationBarColor: kPrimaryColor,
       systemNavigationBarDividerColor: kBlackColor2,
     ),
   ),
