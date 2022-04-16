@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 ///main them color
 //App primary color
-const kPrimaryColor = Color(0xFFFF3A27);
+const kPrimaryColor = Color(0xFFE94615);
 //App secondary color
-const kSecondaryColor = Color(0xFFFF6D27);
+const kSecondaryColor = Color(0xFF00284D);
 //Light theme app background color
 const kBgColor = Color(0xFFF3F3F3);
 //Dark theme app cardColor

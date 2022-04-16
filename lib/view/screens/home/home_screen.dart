@@ -6,6 +6,7 @@ import 'package:mystarter/constants/images.dart';
 import 'package:mystarter/constants/size_config.dart';
 
 import '../../../models/response/rp_server_model.dart';
+import 'widgets/service_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -74,10 +75,11 @@ class HomeScreen extends StatelessWidget {
                       shrinkWrap: true,
                       physics: const NeverScrollableScrollPhysics(),
                       itemBuilder: (context, index) {
-                    return Column(
-                      children: [],
-                    );
-                  }),
+                        return ServiceCard(
+                          tap: (){},
+                          service: serverList[index],
+                        );
+                      }),
                 ),
               ),
             )
