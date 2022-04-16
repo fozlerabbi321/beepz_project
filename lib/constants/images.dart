@@ -11,6 +11,7 @@ class Images {
   static const String introDark1 = kImageDir + 'intro1.png';
   static const String introDark2 = kImageDir + 'intro2.png';
   static const String introDark3 = kImageDir + 'intro3.png';
+  static const String service = kImageDir + 'service.png';
 
   ///SVG Image
   static const String home = kIConDir + 'home.svg';
@@ -19,4 +20,14 @@ class Images {
   static const String review = kIConDir + 'review.svg';
   static const String category = kIConDir + 'category.svg';
   static const String close = kIConDir + 'close.svg';
+  static const String accountInfo = kIConDir + 'account_info.svg';
+  static const String addressBook = kIConDir + 'address_book.svg';
+  static const String message = kIConDir + 'message.svg';
+  static const String language = kIConDir + 'language.svg';
+  static const String general = kIConDir + 'general.svg';
+  static const String policies = kIConDir + 'policies.svg';
+  static const String helps = kIConDir + 'helps.svg';
+  static const String country = kIConDir + 'country.svg';
+  static const String makePayment = kIConDir + 'make_payment.svg';
+  static const String menu = kIConDir + 'menu.svg';
 }

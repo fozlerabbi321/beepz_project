@@ -39,7 +39,7 @@ class ServiceCard extends StatelessWidget {
                   decoration: const BoxDecoration(
                       color: kPrimaryColor, shape: BoxShape.circle),
                   child: Image.asset(
-                    Images.homeLogo,
+                    Images.service,
                     color: Colors.white,
                   ),
                 ),
