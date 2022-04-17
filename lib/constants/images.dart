@@ -12,6 +12,7 @@ class Images {
   static const String introDark2 = kImageDir + 'intro2.png';
   static const String introDark3 = kImageDir + 'intro3.png';
   static const String service = kImageDir + 'service.png';
+  static const String orderRec = kImageDir + 'order_rec.png';
 
   ///SVG Image
   static const String home = kIConDir + 'home.svg';
@@ -30,4 +31,14 @@ class Images {
   static const String country = kIConDir + 'country.svg';
   static const String makePayment = kIConDir + 'make_payment.svg';
   static const String menu = kIConDir + 'menu.svg';
+  static const String back = kIConDir + 'back.svg';
+  static const String complete = kIConDir + 'complete.svg';
+  static const String driveOnWay = kIConDir + 'driver_on_way.svg';
+  static const String driverOnDrop = kIConDir + 'driver_on_drop.svg';
+  static const String garage = kIConDir + 'garage.svg';
+  static const String like = kIConDir + 'like.svg';
+  static const String picked = kIConDir + 'picked.svg';
+  static const String qrCode = kIConDir + 'qr_code.svg';
+  static const String serviceEnd = kIConDir + 'service_end.svg';
+  static const String serviceStart = kIConDir + 'service_start.svg';
 }

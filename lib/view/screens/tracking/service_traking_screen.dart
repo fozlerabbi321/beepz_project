@@ -53,7 +53,7 @@ class ServiceTrackingScreen extends StatelessWidget{
                             child: Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 10,),
                               child: SvgPicture.asset(
-                                Images.menu,
+                                Images.back,
                                 color: kWhiteColor,
                                 height: 25,
                               ),
@@ -91,7 +91,7 @@ class ServiceTrackingScreen extends StatelessWidget{
                         children: [
                           SizedBox(
                             width: SizeConfig.screenWidth,
-                            child:  ServiceTimeline(service: service,),),
+                            child:  ServiceTimeline(service: service, status: service.status ?? 0,),),
                         ],
                       ),
                     ),

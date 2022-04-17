@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                           itemBuilder: (context, index) {
                             return ServiceCard(
                               tap: (){
-                                Get.to(() => ServiceTrackingScreen(service: serverList[index],));
+                                Get.to(() => ServiceTrackingScreen(service: serverList[index], ));
                               },
                               service: serverList[index],
                             );

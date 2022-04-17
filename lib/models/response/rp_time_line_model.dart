@@ -52,48 +52,48 @@ class RpTimeLineModel {
 }
 List<RpTimeLineModel> serverTimeList = [
   RpTimeLineModel(
-    image: Images.menu,
+    image: Images.like,
     title: 'Booking Confirmed',
     desc: "you are putting that monkey in the",
     isFast: true,
   ),
   RpTimeLineModel(
-    image: Images.menu,
+    image: Images.driveOnWay,
     title: 'Driver on the way to pickup',
     desc: "you are putting that monkey in the",
   ),
   RpTimeLineModel(
     title: 'QR Code Scaned',
-    image: Images.menu,
+    image: Images.qrCode,
     desc: "you are putting that monkey in the",
   ),
   RpTimeLineModel(
     title: 'Car Picked Up',
-    image: Images.menu,
+    image: Images.picked,
     desc: "you are putting that monkey in the",
   ),
   RpTimeLineModel(
     title: 'Reached Garage',
-    image: Images.menu,
+    image: Images.garage,
     desc: "you are putting that monkey in the",
   ),
   RpTimeLineModel(
     title: 'Service Started',
-    image: Images.menu,
+    image: Images.serviceStart,
     desc: "you are putting that monkey in the",
   ),
   RpTimeLineModel(
     title: 'Service Ended',
-    image: Images.menu,
+    image: Images.serviceEnd,
     desc: "you are putting that monkey in the",
   ),
   RpTimeLineModel(
-    image: Images.menu,
+    image: Images.driverOnDrop,
     title: 'Driver on the way to Drop Off',
     desc: "you are putting that monkey in the",
   ),
   RpTimeLineModel(
-    image: Images.menu,
+    image: Images.complete,
     title: 'Booking Complete',
     desc: "you are putting that monkey in the",
     isLast: true,
